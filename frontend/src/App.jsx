@@ -34,7 +34,7 @@ function App() {
         <img src={logo} alt="Logo" className="logo" />
         <div className="github">
           <a
-            href="https://github.com/your-repo"
+            href="https://github.com/HBTK/Social-Media-Performance"
             target="_blank"
             rel="noopener noreferrer"
           >
