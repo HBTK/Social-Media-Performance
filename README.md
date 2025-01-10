@@ -29,7 +29,7 @@ Our project leverages **Langflow**, **MERN Stack**, and **DataStax Astra DB** to
 
 #### Frontend & Full-Stack Development  
 1. **MERN Stack**  
-   - **MongoDB**: Database for handling user and platform data.  
+   - **AstraDB**: Database for handling user and platform data.  
    - **Express.js**: Backend framework for handling API requests.  
    - **React.js**: Frontend framework for building an interactive user interface.  
    - **Node.js**: Runtime for backend development.  
