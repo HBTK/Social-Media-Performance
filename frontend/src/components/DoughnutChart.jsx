@@ -15,33 +15,30 @@ const DoughnutChart = () => {
     "Video",
   ]);
 
-  useEffect(() => {
-    // Simulate fetching CSV data and calculating engagement rate
-    const csvData = [
-      { Post_Type: "Story", Likes: 450, Shares: 97, Comments: 41, Views: 609 },
-      {
-        Post_Type: "Static Image",
-        Likes: 451,
-        Shares: 87,
-        Comments: 23,
-        Views: 188,
-      },
-      {
-        Post_Type: "Carousel",
-        Likes: 156,
-        Shares: 45,
-        Comments: 20,
-        Views: 673,
-      },
-      {
-        Post_Type: "Carousel",
-        Likes: 380,
-        Shares: 71,
-        Comments: 10,
-        Views: 978,
-      },
-      { Post_Type: "Video", Likes: 108, Shares: 79, Comments: 50, Views: 104 },
-    ];
+   useEffect(() => {
+    const fetchCSVData = async () => {
+      try {
+        const response = await fetch(
+          "https://social-media-performance.onrender.com/fetchData"
+        );
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const csvData = await response.json(); // Assuming the backend sends JSON data.
+
+        // Calculate engagement rates using the fetched data.
+        const rates = calculateEngagementRates(csvData);
+        setEngagementRates(rates);
+      } catch (err) {
+        console.error("Error fetching data:", err);
+        setError(err.message);
+      }
+    };
+
+    fetchCSVData();
+  }, []);
 
     const rates = calculateEngagementRates(csvData);
     setEngagementRates(rates);
