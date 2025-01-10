@@ -26,7 +26,7 @@ function GetInsight() {
     };
 
     try {
-      const res = await fetch("http://localhost:3000/langflow_client", {
+      const res = await fetch("https://social-media-performance.onrender.com/langflow_client", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
