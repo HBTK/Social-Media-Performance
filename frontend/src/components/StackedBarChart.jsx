@@ -26,7 +26,7 @@ const StackedBarChart = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:3000/fetchData");
+        const response = await fetch("https://social-media-performance.onrender.com/fetchData");
         if (!response.ok) {
           throw new Error("Failed to fetch data");
         }
