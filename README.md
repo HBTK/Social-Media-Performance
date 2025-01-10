@@ -108,7 +108,7 @@ cd Social-Media-Performance
 
 #### 2. Backend Setup  
 
-**Install Python Dependencies**  
+**Install Node, Python Dependencies**  
 ```bash  
 pip install -r requirements.txt  
 ```  
@@ -132,7 +132,7 @@ npm start
 
 #### 4. Start Backend (Langflow Workflow)  
 ```bash  
-python main.py  
+node server.js
 ```  
 
 ---
@@ -140,10 +140,7 @@ python main.py
 ### Contributions  
 We welcome contributions! Feel free to fork the repository, create feature branches, and submit pull requests.  
 
----
-
-### License  
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.  
+--- 
 
 ---
 
