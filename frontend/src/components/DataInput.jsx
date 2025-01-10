@@ -47,7 +47,7 @@ function DataInput({ postTypes, PostType, handleChange }) {
     };
 
     try {
-      const response = await fetch("http://localhost:3000/addData", {
+      const response = await fetch("https://social-media-performance.onrender.com/addData", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
