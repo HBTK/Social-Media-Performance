@@ -54,7 +54,7 @@ function DataInput({ postTypes, PostType, handleChange }) {
 
     try {
       const response = await fetch(
-        "https://social-media-performance-analytics.onrender.com/addData",
+        "https://social-media-performance-7gik.onrender.com/addData",
         {
           method: "POST",
           headers: {
