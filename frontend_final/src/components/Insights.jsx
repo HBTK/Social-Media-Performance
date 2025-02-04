@@ -19,7 +19,7 @@ function GetInsight() {
     };
     try {
       const res = await fetch(
-        "https://social-media-performance-analytics.onrender.com/langflow_client",
+        "https://social-media-performance-7gik.onrender.com/langflow_client",
         {
           method: "POST",
           headers: {
