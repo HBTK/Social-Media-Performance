@@ -14,7 +14,7 @@ export default function DoughnutChart() {
     const fetchCSVData = async () => {
       try {
         const response = await fetch(
-          "https://social-media-performance-analytics.onrender.com/fetchData"
+          "https://social-media-performance-7gik.onrender.com/fetchData"
         );
 
         if (!response.ok) {
