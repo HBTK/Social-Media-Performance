@@ -148,6 +148,6 @@ We welcome contributions! Feel free to fork the repository, create feature branc
 For any questions or feedback, please contact:  
 - **Name**: Vishal Kesharwani  
 - **Email**: vishal.kesharwani@mitaoe.ac.in  
-- **GitHub**: [bytemaster27](https://github.com/bytemaster27)  
+- **GitHub**: [vishal-kesharwani](https://github.com/vishal-kesharwani)  
 
 ---  
